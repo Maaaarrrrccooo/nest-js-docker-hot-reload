@@ -28,7 +28,6 @@ FROM node:18-alpine
 
 COPY --chown=node:node --from=base /app/node_modules ./node_modules
 COPY --chown=node:node --from=build /app/dist ./dist
-COPY --chown=node:node --from=base /app/package.json . 
 
 USER node
 
